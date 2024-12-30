@@ -1,8 +1,4 @@
 body{
-    background: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
     color: #3D3D3D;
@@ -43,16 +39,17 @@ body{
     line-height: 16px;
 }
 
-.login-form input[type=submit]{
+.register_btn{
     background-color: #46A358;
     color: #FFFFFF;
-    width: 100%;
+    width: 300px;
     height: 45px;
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 36px;
 }
+
 
 .login-form input{
     display: flex;
@@ -70,9 +67,6 @@ body{
     margin-bottom: 15px;
     width: 300px;
     height: 40px;
-}
-
-.social a{
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
