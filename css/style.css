@@ -1,9 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .container{
+    font-family: "Cera Pro", sans-serif;
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header div nav ul a{
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+header .login{
+    background: #46a358;
+    border-radius: 6px;
+    padding: 8px 17px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #46a358;
+    transition: 0.5s;
+}
+
+header .login svg{
+    margin-right: 5px;
+}
+
+header .login svg path{
+    transition: 0.5s;
+}
+
+header .login:hover{
+    background-color: #FFFFFF;
+    color: #46a358;
+}
+
+header .login:hover svg path{
+    stroke: #46a358;
+}
+
+.banner .container{
+    padding-left: 45px;
+}
+.banner .container h3{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 7px;
+}
+.banner .container h1{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+}
+.banner .container h1 span{
+    color: #46a358;
+}
+.banner .container p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    margin-bottom: 44px;
+}
+.banner .container a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #46a358;
+    background: #46a358;
+    border-radius: 6px;
+    padding: 8px 17px;
+    transition: 0.5s;
+}
+.banner .container a:hover{
+    background-color: #FFFFFF;
+    color: #46a358;
 }
