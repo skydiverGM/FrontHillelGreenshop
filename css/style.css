@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../fonts/cera_pro_regular-webfont.eot');
+    src: url('../fonts/cera_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cera_pro_regular-webfont.woff2') format('woff2'),
+    url('../fonts/cera_pro_regular-webfont.woff') format('woff'),
+    url('../fonts/cera_pro_regular-webfont.ttf') format('truetype'),
+    url('../fonts/cera_pro_regular-webfont.svg#cera_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -5,7 +22,7 @@
 }
 
 .container{
-    font-family: "Cera Pro", sans-serif;
+    font-family: 'cera_proregular', sans-serif;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -35,7 +52,7 @@ header .login{
     font-size: 16px;
     color: #fff;
     border: 1px solid #46a358;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 header .login svg{
@@ -55,9 +72,10 @@ header .login:hover svg path{
     stroke: #46a358;
 }
 
-.banner .container{
-    padding-left: 45px;
+.banner{
+    padding-left: 40px;
 }
+
 .banner .container h3{
     font-weight: 500;
     font-size: 14px;
@@ -95,7 +113,7 @@ header .login:hover svg path{
     background: #46a358;
     border-radius: 6px;
     padding: 8px 17px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .banner .container a:hover{
     background-color: #FFFFFF;
