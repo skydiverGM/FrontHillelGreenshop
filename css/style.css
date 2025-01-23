@@ -28,6 +28,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
 }
 
 header div nav ul{
@@ -118,4 +119,94 @@ header .login:hover svg path{
 .banner .container a:hover{
     background-color: #FFFFFF;
     color: #46a358;
+}
+
+.products .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.categories{
+    width: 25%;
+}
+.categories h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+.categories h3{
+    margin-bottom: 10px;
+}
+.categories a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 267%;
+    color: #3d3d3d;
+    padding-left: 10px;
+}
+.categories a:hover{
+    font-weight: 700;
+    color: #46a358;
+}
+.categories img{
+    display: flex;
+    align-items: flex-start;
+    align-self: end;
+}
+.items{
+    width: 75%;
+}
+.sorting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sorting a, p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+.sorting ul{
+    display: flex;
+    gap: 40px;
+}
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.articles article{
+    margin-bottom: 70px;
+}
+.articles article:hover{
+    outline: 2px solid #46a358;
+    outline-offset: 5px;
+    border-radius: 20px;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.articles img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 30px;
+}
+.articles h4{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    margin-bottom: 6px;
+    padding-left: 10px;
+}
+.articles p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
