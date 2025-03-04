@@ -26,7 +26,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 50px;
 }
 header div nav ul{
@@ -116,12 +116,6 @@ header .login:hover svg path{
     background-color: #FFFFFF;
     color: #46a358;
 }
-
-.products .container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 .categories{
     width: 25%;
 }
@@ -145,11 +139,7 @@ header .login:hover svg path{
     font-weight: 700;
     color: #46a358;
 }
-.categories img{
-    display: flex;
-    align-items: flex-start;
-    align-self: end;
-}
+
 .items{
     width: 75%;
 }
@@ -174,12 +164,17 @@ header .login:hover svg path{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .articles article{
+    /*border-top: solid 1px transparent;*/
     transform-origin: top;
     transition: 0.3s;
     margin-bottom: 70px;
+    position: relative;
+    overflow: hidden;
 }
 .articles article:hover{
+    /*border-top: solid 1px #46a358;*/
     outline: 2px solid #46a358;
     outline-offset: 5px;
     border-radius: 15px;
@@ -190,6 +185,25 @@ header .login:hover svg path{
     width: 250px;
     margin-bottom: 30px;
 }
+
+.icons{
+    position: absolute;
+    bottom: -50%;
+    left: 35%;
+    display: flex;
+    gap: 5px;
+}
+.icons a {
+    color: #3d3d3d;
+    transition: color 0.3s ease-in-out;
+}
+.icons a:hover {
+    color: #46a358;
+}
+.articles article:hover .icons{
+    bottom: 20%;
+}
+
 .articles h4{
     font-weight: 400;
     font-size: 16px;
@@ -205,4 +219,27 @@ header .login:hover svg path{
     color: #46a358;
     padding-left: 10px;
     padding-bottom: 10px;
+}
+.articles div{
+    display: flex;
+    align-items: end;
+}
+.old_price{
+    font-size: 12px !important;
+    color: darkgray !important;
+    text-decoration: line-through;
+}
+.discount{
+    color: white;
+    background-color: #46a358;
+    position: absolute;
+    padding: 5px;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+}
+.pagination ul{
+    display: flex;
+    gap: 10px;
+    
 }
