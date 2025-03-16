@@ -39,6 +39,57 @@ header div nav ul a{
     font-size: 16px;
     color: #3d3d3d;
 }
+
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f5fbf7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+    list-style: none;
+    min-width: 180px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-second {
+    position: relative;
+}
+.dropdown-menu-second {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #f5fbf7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+    list-style: none;
+    min-width: 180px;
+}
+.dropdown-second:hover .dropdown-menu-second {
+    display: block;
+}
+.dropdown-menu li, .dropdown-menu-second li {
+    padding: 8px 12px;
+}
+.dropdown-menu a, .dropdown-menu-second a {
+    text-decoration: none;
+    color: #3d3d3d;
+    display: block;
+}
+.dropdown-menu a:hover, .dropdown-menu-second a:hover {
+    color: #46a358;
+    font-weight: bold;
+}
+.arrow {
+    float: right;
+}
+
 header .login{
     background: #46a358;
     border-radius: 6px;
